@@ -18,7 +18,6 @@ body{
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 //@media only screen and (min-width: 1200px) {...}
 
-
 header{
     width: 100%;
     display: flex;
@@ -28,8 +27,9 @@ header{
         align-items: center;
         justify-content: center;
         position:fixed;
-        margin: 1%10%1%10%;
+        margin: 1%4%1%4%;
         width: 100vh;
+        height: 8vh;
         background-color: #6f7767;
         -webkit-box-shadow: 2px 3px 5px 3px rgba(0, 0, 0, 0.281);
         -moz-box-shadow: 2px 3px 5px 3px rgba(0, 0, 0, 0.349);
@@ -37,7 +37,6 @@ header{
         
         .logo{
             width: 20vh;
-            height: 10vh;
             display: flex;
             align-items: center;
             color: white;
@@ -49,7 +48,7 @@ header{
             justify-content: space-between;
             a{
                 display:inline-block;
-                padding: 7% 3% 7% 3%;
+                padding: 5% 3% 5% 3%;
                 color: white;
                 text-decoration: none;
             }
@@ -62,19 +61,28 @@ header{
     @media only screen and (max-width: 1150px) {
         nav{
             width: 80vh;
+            height: 7vh;
             margin: 1%5%1%5%;
             padding: 0%2%0%2%;
         }
-
-        //WILL GO DOWN TO A HAMBURG MENU//
-    
+    }
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (max-width: 768px) {
+        //WILL GO DOWN TO A HAMBURG MENU
+        nav{
+            width: 50vh;
+            margin: 1%5%1%5%;
+            padding: 0%2%0%2%;
+            .menu{
+                width: 100%;
+                height: 100%;
+                a{
+                    padding: 6% 3% 6% 3%;
+                }
+            }
+        }
     }
 }
-
-
-
-
-
 
 .content{
     overflow: hidden;
@@ -122,8 +130,6 @@ header{
             background-color: #7e8677;
         }
     }
-
-
     /* Medium devices (landscape tablets, 768px and down) */
     @media only screen and (max-width: 768px) {
         .landing{
